@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Manager</title>
+</head>
+<body>
+    <h1>Budget Manager</h1>
+
+    <h2>Add Category</h2>
+    <form action="/add_category" method="post">
+        <label for="category_name">Category Name:</label>
+        <input type="text" id="category_name" name="category_name" required>
+        <button type="submit">Add Category</button>
+    </form>
+
+    <h2>Add Funds</h2>
+    <form action="/add_funds" method="post">
+        <label for="category_name">Category Name:</label>
+        <input type="text" id="category_name" name="category_name" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Add Funds</button>
+    </form>
+
+    <h2>Spend Funds</h2>
+    <form action="/spend_funds" method="post">
+        <label for="category_name">Category Name:</label>
+        <input type="text" id="category_name" name="category_name" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Spend Funds</button>
+    </form>
+
+    <h2>Show Balance</h2>
+    <a href="/show_balance"><button>Show Balance</button></a>
+</body>
+</html>
