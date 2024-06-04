@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Budget</title>
+</head>
+<body>
+    <h1>Current Budget</h1>
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Balance (Rs.)</th>
+        </tr>
+        {% for category, balance in balances.items() %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>{{ balance }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/"><button>Back</button></a>
+</body>
+</html>
